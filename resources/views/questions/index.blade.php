@@ -36,7 +36,6 @@
                                 <div class="d-flex align-items-center">
                                     <h3 class="mt-0"><a href="{{ $question->url }}">{{ $question->title }}</a></h3>
                                     <div class="ml-auto">
-                                        
                                         {{-- @if (Auth::user()->can('update', $question)) --}}
                                         @can ('update', $question)
                                             <a href="{{ route('questions.edit', $question->id) }}" class="btn btn-sm btn-outline-info">Edit</a>
