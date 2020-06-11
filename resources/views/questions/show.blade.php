@@ -29,10 +29,9 @@
                                 <div class="col-4"></div>
                                 <div class="col-4"></div>
                                 <div class="col-4">
-                                    @include('shared._author', [
-                                    'label' => "Questioned",
-                                    'model' => $question
-                                ])  
+
+                                <user-info :model="{{ $question }}" label="Questioned"></user-info>
+
                                 </div>
                             </div>
                         </div>
