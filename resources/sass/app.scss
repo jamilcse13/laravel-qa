@@ -8,8 +8,12 @@ $fa-font-path: "./webfonts";
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
-@import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
-@import '~@fortawesome/fontawesome-free/scss/solid.scss';
+
+// Font Awesome
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';
 
 
 .navbar-laravel {
@@ -98,4 +102,8 @@ form.form-delete {
     &:not(:last-child) {
         border-bottom: 1px solid rgba($black, .1);
     }
+}
+
+[v-cloak] {
+    display: none;
 }
