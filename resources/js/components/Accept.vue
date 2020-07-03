@@ -41,7 +41,7 @@ export default {
 
     computed: {
         canAccept () {
-            return this.authorize('accept', answer);
+            return this.authorize('accept', this.answer);
         },
 
         accepted () {
