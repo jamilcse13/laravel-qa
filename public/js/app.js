@@ -2120,9 +2120,19 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ['answers', 'count'],
+  props: ['question'],
+  data: function data() {
+    return {
+      questionId: this.question.id,
+      count: this.question.answers_count
+    };
+  },
   computed: {
     title: function title() {
       return this.count + " " + (this.count > 1 ? "Answers" : "Answer");
@@ -38747,7 +38757,9 @@ var render = function() {
                       key: answer.id,
                       attrs: { answer: answer }
                     })
-                  })
+                  }),
+                  _vm._v(" "),
+                  _vm._m(0)
                 ],
                 2
               )
@@ -38757,7 +38769,18 @@ var render = function() {
       ])
     : _vm._e()
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "text-center mt-3" }, [
+      _c("button", { staticClass: "btn btn-outline-secondary" }, [
+        _vm._v("Load more answers")
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 
